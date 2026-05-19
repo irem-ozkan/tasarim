@@ -1,4 +1,4 @@
-public interface Indirim {
+public interface KursIndirim {
 
     double indirimUygula(double toplam);
 }

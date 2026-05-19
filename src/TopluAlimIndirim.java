@@ -1,4 +1,4 @@
-public class AbonmanIndirim implements Indirim {
+public class TopluAlimIndirim implements KursIndirim {
 
     @Override
     public double indirimUygula(double toplam) {

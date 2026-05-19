@@ -10,11 +10,17 @@ public class Main {
 
         double toplam = javaKursu + pythonKursu + webKursu;
 
-        Indirim indirim = IndirimFactory.indirimOlustur(indirimTipi);
+        KursIndirim indirim = KursIndirimFactory.indirimOlustur(indirimTipi);
 
         double sonuc = indirim.indirimUygula(toplam);
 
         System.out.println("Sepet toplami: " + toplam);
         System.out.println("Indirimli toplam: " + sonuc);
+
+        KursFacade kursFacade = new KursFacade();
+        Kurs kurs = kursFacade.javaKursPaketiOlustur();
+
+        System.out.println("Kurs paketi: " + kurs.bilgiVer());
+        System.out.println("Kurs fiyati: " + kurs.fiyatVer());
     }
 }
