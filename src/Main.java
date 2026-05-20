@@ -17,11 +17,9 @@ public class Main {
         System.out.println("Sepet toplami: " + toplam);
         System.out.println("Indirimli toplam: " + sonuc);
 
-        Kurs kurs = new JavaKursu();
+        KursFacade kursFacade = new KursFacade();
 
-        kurs = new Sertifika(kurs);
-
-        kurs = new Mentorluk(kurs);
+        Kurs kurs = kursFacade.javaKursPaketiOlustur();
 
         System.out.println("Kurs paketi: " + kurs.bilgiVer());
 
