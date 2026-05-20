@@ -10,5 +10,15 @@ public class Main {
 
         double toplam = javaKursu + pythonKursu + webKursu;
         double sonuc = toplam;
+
+        if(indirimTipi.equals("ogrenci")) {
+            sonuc = toplam * 0.8;
+        }
+        else if(indirimTipi.equals("toplu")) {
+            sonuc = toplam * 0.75;
+        }
+        else if(indirimTipi.equals("kupon")) {
+            sonuc = toplam - 500;
+        }
     }
 }
