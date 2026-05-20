@@ -55,3 +55,8 @@ Kod geliştirme sürecinde:
 - metodlar aşamalı şekilde yazılmıştır
 - patternler sırayla projeye dahil edilmiştir
 Bu nedenle commit geçmişinde hem eski denemeler hem de yeniden düzenlenen geliştirme süreci birlikte görülebilir.
+
+
+# Mimari Diyagram
+
+![Mimari Diyagram](docs/diagrams/mimari-diyagram.png)
