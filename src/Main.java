@@ -24,5 +24,13 @@ public class Main {
         System.out.println("Kurs paketi: " + kurs.bilgiVer());
 
         System.out.println("Kurs fiyati: " + kurs.fiyatVer());
+
+        OdemeIslemi odeme1 = new OdemeIslemi(new KrediKartiOdeme());
+
+        odeme1.odemeYap(sonuc);
+
+        OdemeIslemi odeme2 = new OdemeIslemi(new HavaleOdeme());
+
+        odeme2.odemeYap(sonuc);
     }
 }
