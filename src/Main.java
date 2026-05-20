@@ -16,5 +16,13 @@ public class Main {
 
         System.out.println("Sepet toplami: " + toplam);
         System.out.println("Indirimli toplam: " + sonuc);
+
+        KursFacade kursFacade = new KursFacade();
+
+        Kurs kurs = kursFacade.javaKursPaketiOlustur();
+
+        System.out.println("Kurs paketi: " + kurs.bilgiVer());
+
+        System.out.println("Kurs fiyati: " + kurs.fiyatVer());
     }
 }
