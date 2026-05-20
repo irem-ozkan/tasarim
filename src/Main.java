@@ -9,17 +9,10 @@ public class Main {
         double webKursu = 1500;
 
         double toplam = javaKursu + pythonKursu + webKursu;
-        double sonuc = toplam;
 
-        if(indirimTipi.equals("ogrenci")) {
-            sonuc = toplam * 0.8;
-        }
-        else if(indirimTipi.equals("abonman")) {
-            sonuc = toplam * 0.75;
-        }
-        else if(indirimTipi.equals("kupon")) {
-            sonuc = toplam - 500;
-        }
+        KursIndirim indirim = KursIndirimFactory.indirimOlustur(indirimTipi);
+
+        double sonuc = indirim.indirimUygula(toplam);
 
         System.out.println("Sepet toplami: " + toplam);
         System.out.println("Indirimli toplam: " + sonuc);
