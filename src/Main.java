@@ -32,5 +32,18 @@ public class Main {
         OdemeIslemi odeme2 = new OdemeIslemi(new HavaleOdeme());
 
         odeme2.odemeYap(sonuc);
+
+
+        KursBildirimSistemi bildirimSistemi = new KursBildirimSistemi();
+
+        Kullanici kullanici1 = new AboneKullanici("Irem");
+
+        Kullanici kullanici2 = new AboneKullanici("Ayse");
+
+        bildirimSistemi.aboneEkle(kullanici1);
+
+        bildirimSistemi.aboneEkle(kullanici2);
+
+        bildirimSistemi.bildirimGonder("Yeni Java kursu indirime girdi.");
     }
 }
