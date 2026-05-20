@@ -20,5 +20,8 @@ public class Main {
         else if(indirimTipi.equals("kupon")) {
             sonuc = toplam - 500;
         }
+
+        System.out.println("Sepet toplami: " + toplam);
+        System.out.println("Indirimli toplam: " + sonuc);
     }
 }
