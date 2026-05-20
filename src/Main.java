@@ -7,5 +7,8 @@ public class Main {
         double javaKursu = 1200;
         double pythonKursu = 1000;
         double webKursu = 1500;
+
+        double toplam = javaKursu + pythonKursu + webKursu;
+        double sonuc = toplam;
     }
 }
